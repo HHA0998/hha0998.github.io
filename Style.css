@@ -1,17 +1,17 @@
 body {
-    background-color: rgba(87, 87, 87, 0.521);
-  }
+    background-color: rgb(7, 25, 53);
+    }
 .InvisContain {
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgba(0, 255, 21, 0);
     width: 400px;
     height: 300px;
     margin-left: -200px;
     margin-top: -150px;
     text-align: center;
-}
+    }
 .Content {
     font-size: 0.8em;
     font-family: sans-serif;
@@ -25,3 +25,21 @@ body {
     margin-top: -25px;
     text-align: center;
     }
+.glow {
+    color: #ffffff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    }
+}
+.regular {
+    color: #ffffff;
+    text-align: center;
+}
+

@@ -1,2 +1,2 @@
-//alert("");
-var b;
+addEventListener("click", (event) => {});
+onclick = (event => {});
