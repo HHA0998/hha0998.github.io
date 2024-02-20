@@ -20,33 +20,33 @@ body {
 }
 .InvisContainLEFT {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 25%;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0);
     width: 400px;
-    height: 300px;
+    height: 75%;
     margin-left: -200px;
     margin-top: -150px;
     text-align: center;
     }
 .InvisContainMIDDLE {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0);
     width: 400px;
-    height: 300px;
+    height: 75%;
     margin-left: -200px;
     margin-top: -150px;
     text-align: center;
 }
 .InvisContainRIGHT {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 75%;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0);
     width: 400px;
-    height: 300px;
+    height: 75%;
     margin-left: -200px;
     margin-top: -150px;
     text-align: center;
