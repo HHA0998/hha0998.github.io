@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <!-- head definitions go here -->
+    </head>
+    <body>
+        <div class="InvisContain">
+            <div id="Content">
+                <h1 class="glow">HHA-0998</h1>
+                <p class="glow">https://github.com/HHA0998</p>
+                <p class="glow"><span id="x">n/a</span></p>
+                <p class="glow"><span id="y">n/a</span></p>
+                <p class="glow">you found my page ;p</p>
+            </div>
+        </div>
+    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+    <style>
+body {
+background-color: rgb(7, 25, 53);
+}
+.InvisContain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 3px solid rgba(0, 255, 21, 0);
+    width: 400px;
+    height: 300px;
+    margin-left: -200px;
+    margin-top: -150px;
+    text-align: center;
+    }
+.Content {
+    font-size: 0.8em;
+    font-family: sans-serif;
+    background-color: #ccc;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 240px;
+    height: 50px;
+    margin-left: -120px;
+    margin-top: -25px;
+    text-align: center;
+    }
+.glow {
+    color: #ffffff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    }
+}
+.regular {
+    color: #ffffff;
+    text-align: center;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    font:
+      16px "Zilla",
+      "Open Sans",
+      "Helvetica",
+      "Arial",
+      sans-serif;
+        }
+    </style>
+    
+    <script type="text/javascript">
+        var hor = 1;
+        var ver = 2;
+        var Debug;
+
+        const pageX = document.getElementById("x");
+        const pageY = document.getElementById("y");
+
+        function updateDisplay(event) {
+          pageX.innerText = event.pageX;
+          pageY.innerText = event.pageY;
+        }
+
+        addEventListener("mousemove", updateDisplay, false);
+        addEventListener("mouseenter", updateDisplay, false);
+        addEventListener("mouseleave", updateDisplay, false);
+
+        document.getElementById("Mh").innerHTML = hor;
+        document.getElementById("Mv").innerHTML = ver;
+        console.log(ver);
+    </script>
+</html>
