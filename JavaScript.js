@@ -1,21 +1,25 @@
-var hor = 1;
-var ver = 2;
-var Debug;
+/* from geeksforgeeks.org */
 
-const pageX = document.getElementById("x");
-const pageY = document.getElementById("y");
+/* Storing user's device details in a variable*/
+let details = navigator.userAgent; 
 
-function updateDisplay(event) {
-  pageX.innerText = event.pageX;
-  pageY.innerText = event.pageY;
+/* Creating a regular expression 
+containing some mobile devices keywords 
+to search it in details string*/
+let regexp = /android|iphone|kindle|ipad/i; 
+
+/* Using test() method to search regexp in details 
+it returns boolean value*/
+let isMobileDevice = regexp.test(details); 
+
+if (isMobileDevice) { 
+	console.log("You are using a Mobile Device"); 
+} else { 
+	console.log("You are using Desktop"); 
 }
 
-addEventListener("mousemove", updateDisplay, false);
-addEventListener("mouseenter", updateDisplay, false);
-addEventListener("mouseleave", updateDisplay, false);
+console.log(navigator.userAgent);
 
-document.getElementById("Mh").innerHTML = hor;
-document.getElementById("Mv").innerHTML = ver;
-console.log(ver);
+
 
 
