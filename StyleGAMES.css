@@ -20,7 +20,7 @@ body {
 }
 .InvisContainLEFT {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 25%;
     border: 3px solid rgb(255, 255, 255);
     width: 600px;
@@ -31,7 +31,7 @@ body {
     }
 .InvisContainRIGHT {
     position: absolute;
-    top: 25%;
+    top: 30%;
     right: 15%;
     border: 3px solid rgb(255, 255, 255);
     width: 600px;
@@ -63,7 +63,7 @@ body {
         text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
     }
     to {
-        text-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+        text-shadow: 0 0 10px #ffffff, 0 0 10px #ffffff;
     }
 }
 .regular {
@@ -80,4 +80,20 @@ body {
       "Arial",
       sans-serif;
   }
+
+.topbar {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.topbar a {
+    position: relative;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
 
